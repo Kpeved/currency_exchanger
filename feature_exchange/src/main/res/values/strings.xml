@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="quotes">
+        <item>@string/quote_1</item>
+        <item>@string/quote_2</item>
+        <item>@string/quote_3</item>
+        <item>@string/quote_4</item>
+        <item>@string/quote_5</item>
+        <item>@string/quote_6</item>
+        <item>@string/quote_7</item>
+    </array>
+
+    <array name="error_pics">
+        <item>@drawable/pic1</item>
+        <item>@drawable/pic2</item>
+        <item>@drawable/pic3</item>
+        <item>@drawable/pic4</item>
+        <item>@drawable/pic5</item>
+        <item>@drawable/pic6</item>
+        <item>@drawable/pic7</item>
+    </array>
+
+    <string name="quote_1">It\'s better to be a dictator than a gay ©</string>
+    <string name="quote_2">If someone is a lesbian, it\'s man\'s fault.©</string>
+    <string name="quote_3">We have rigged the latest election. 93.5 per cent have voted for Lukashenko. But they say it is not a European outcome. We have made it 86 per cent.©</string>
+    <string name="quote_4">I don’t see why I should stop it. There are no viruses here. It’s (the ice rink) like a refrigerator. The best thing for heath (…) It is a truly antiviral drug! ©</string>
+    <string name="quote_5">It’s nice watching television: people are working in tractors, no one is talking about the virus ©</string>
+    <string name="quote_6">The tractor will heal everyone. The fields heal everyone ©</string>
+    <string name="quote_7">A thug only understands you when you speak his language ©</string>
+</resources>

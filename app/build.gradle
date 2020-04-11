@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion Versions.compileSdk
+    buildToolsVersion Versions.buildTools
+
+    defaultConfig {
+        minSdkVersion Versions.minSdk
+        targetSdkVersion Versions.targetSdk
+        applicationId "com.test.currencyexchanger"
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "BASE_URL", '"https://hiring.revolut.codes/api/android/"'
+        }
+
+        debug {
+            minifyEnabled false
+            buildConfigField "String", "BASE_URL", '"https://hiring.revolut.codes/api/android/"'
+        }
+    }
+
+
+    // To inline the bytecode built with JVM target 1.8 into
+
+    // bytecode that is being built with JVM target 1.6. (e.g. navArgs)
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation project(Modules.core)
+    implementation project(Modules.coreNetwork)
+    implementation project(Modules.featureExchange)
+
+    implementation Deps.glide
+    implementation Deps.rxJava
+    implementation Deps.rxKotlin
+    implementation Deps.rxAndroid
+    kapt Deps.glideAnnotationProcessor
+
+    implementation Deps.androidXConstraintLayout
+    implementation Deps.material
+
+    testImplementation Deps.junit
+    androidTestImplementation Deps.junitExt
+    androidTestImplementation Deps.espresso
+}

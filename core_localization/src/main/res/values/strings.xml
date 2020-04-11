@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">CurrencyExchanger</string>
+
+    <string name="EUR_name">Euro</string>
+    <string name="AUD_name">Australian Dollar</string>
+    <string name="BGN_name">Bulgarian Lev</string>
+    <string name="BRL_name">Brazilian Real</string>
+    <string name="CAD_name">Canadian Dollar</string>
+    <string name="CHF_name">Swiss Franc</string>
+    <string name="CNY_name">Chinese Yuan</string>
+    <string name="CZK_name">Czech Republic Koruna</string>
+    <string name="DKK_name">Danish Krone</string>
+    <string name="GBP_name">British Pound Sterling</string>
+    <string name="HKD_name">Hong Kong Dollar</string>
+    <string name="HRK_name">Croatian Kuna</string>
+    <string name="HUF_name">Hungarian Forint</string>
+    <string name="IDR_name">Indonesian Rupiah</string>
+    <string name="ILS_name">Israeli New Sheqel</string>
+    <string name="INR_name">Indian Rupee</string>
+    <string name="ISK_name">Icelandic Króna</string>
+    <string name="JPY_name">Japanese Yen</string>
+    <string name="KRW_name">South Korean Won</string>
+    <string name="MXN_name">Mexican Peso</string>
+    <string name="MYR_name">Malaysian Ringgit</string>
+    <string name="NOK_name">Norwegian Krone</string>
+    <string name="NZD_name">New Zealand Dollar</string>
+    <string name="PHP_name">Philippine Peso</string>
+    <string name="PLN_name">Polish Zloty</string>
+    <string name="RON_name">Romanian Leu</string>
+    <string name="RUB_name">Russian Ruble</string>
+    <string name="SEK_name">Swedish Krona</string>
+    <string name="SGD_name">Singapore Dollar</string>
+    <string name="THB_name">Thai Baht</string>
+    <string name="USD_name">United States Dollar</string>
+    <string name="ZAR_name">South African Rand</string>
+
+    <string name="retry">Retry</string>
+    <string name="error_title">Ooops. Something went wrong. You can retry or just relax and be inspired by some famouse quote</string>
+    <string name="country_flags_base_url" translatable="false">https://www.countryflags.io/%s/flat/64.png</string>
+    <string name="amount_placeholder" translatable="false">0</string>
+
+</resources>

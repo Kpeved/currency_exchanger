@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CurrencyExchanger.iml" filepath="$PROJECT_DIR$/CurrencyExchanger.iml" group="CurrencyExchanger" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="CurrencyExchanger/app" />
+      <module fileurl="file://$PROJECT_DIR$/buildSrc/buildSrc.iml" filepath="$PROJECT_DIR$/buildSrc/buildSrc.iml" group="CurrencyExchanger/buildSrc" />
+      <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" group="CurrencyExchanger/core" />
+      <module fileurl="file://$PROJECT_DIR$/core_localization/core_localization.iml" filepath="$PROJECT_DIR$/core_localization/core_localization.iml" group="CurrencyExchanger/core_localization" />
+      <module fileurl="file://$PROJECT_DIR$/core_network/core_network.iml" filepath="$PROJECT_DIR$/core_network/core_network.iml" group="CurrencyExchanger/core_network" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/currency_exchanger.iml" filepath="$PROJECT_DIR$/.idea/currency_exchanger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feature_exchange/feature_exchange.iml" filepath="$PROJECT_DIR$/feature_exchange/feature_exchange.iml" group="CurrencyExchanger/feature_exchange" />
+      <module fileurl="file://$PROJECT_DIR$/feature_exchange_network/feature_exchange_network.iml" filepath="$PROJECT_DIR$/feature_exchange_network/feature_exchange_network.iml" group="CurrencyExchanger/feature_exchange_network" />
+    </modules>
+  </component>
+</project>
