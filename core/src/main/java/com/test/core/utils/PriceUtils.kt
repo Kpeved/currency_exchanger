@@ -15,9 +15,9 @@ object PriceUtils {
                 .replace(decimalFormat.decimalFormatSymbols.groupingSeparator.toString(), "")
         }
 
-    fun convertStringToAmount(string: String, decimalFormat: DecimalFormat = DECIMAL_FORMAT_DEFAULT): BigDecimal =
+    fun convertStringToAmount(string: String): BigDecimal =
         if (string.isBlank()) BigDecimal.ZERO
-        else BigDecimal.valueOf(decimalFormat.parse(string)?.toDouble() ?: 0.0)
+        else BigDecimal.valueOf(string.toDouble())
 
     private fun getNumberFormat(decimalDigitSize: Int): DecimalFormat =
         (NumberFormat.getCurrencyInstance() as DecimalFormat).apply {
