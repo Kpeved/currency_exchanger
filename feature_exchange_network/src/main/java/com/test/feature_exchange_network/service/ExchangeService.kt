@@ -11,9 +11,38 @@ interface ExchangeService {
     fun getExchanges(@Query("base") currency: String?): Single<CurrenciesModel>
 }
 
-class MockedExchangeService() : ExchangeService{
+class MockedExchangeService() : ExchangeService {
     override fun getExchanges(currency: String?): Single<CurrenciesModel> {
-        return Single.just(CurrenciesModel("USD", rates = mapOf(Pair("EUR", BigDecimal(100)))))
+        return Single.just(
+            when (currency) {
+                "USD" ->
+                    CurrenciesModel(
+                        "USD", rates = mapOf(
+                            Pair("EUR", BigDecimal(0.8)),
+                            Pair("GBP", BigDecimal(0.7))
+                        )
+                    )
+                "EUR" -> CurrenciesModel(
+                    "EUR", rates = mapOf(
+                        Pair("USD", BigDecimal(1.2)),
+                        Pair("GBP", BigDecimal(0.9))
+                    )
+                )
+                "GBP" ->
+                    CurrenciesModel(
+                        "GBP", rates = mapOf(
+                            Pair("EUR", BigDecimal(1.2)),
+                            Pair("USD", BigDecimal(1.4))
+                        )
+                    )
+                else -> CurrenciesModel(
+                    "GBP", rates = mapOf(
+                        Pair("EUR", BigDecimal(1.2)),
+                        Pair("USD", BigDecimal(1.4))
+                    )
+                )
+            }
+        )
     }
 
 }
