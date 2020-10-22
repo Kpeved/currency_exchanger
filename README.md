@@ -2,6 +2,8 @@
 
 A simple project showing how currency exchange could be done
 
+![image](https://github.com/Kpeved/currency_exchanger/blob/master/art/CurrencyConverter.gif)
+
 ## Libraries used: 
 
 - Retrofit for networking
