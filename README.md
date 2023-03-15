@@ -1,4 +1,4 @@
-# currency_exchanger
+# Currency Exchanger
 
 A simple project showing how currency exchange could be done
 
